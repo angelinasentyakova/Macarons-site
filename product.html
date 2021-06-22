@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Карточка товара</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../css/style.css" media="all"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+    <script async="async" src="../js/bundle.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__top-burger js-burger-icon"> <span></span></div>
+          <nav class="header__top-menu js-burger-menu"> 
+            <ul class="header__top-list"> 
+              <li class="header__top-link"> <a href="">Свадебные предложения</a></li>
+              <li class="header__top-link"> <a href="">Наборы с печатью</a></li>
+              <li class="header__top-link"> <a href="">Гарантии вкуса и свежести</a></li>
+              <li class="header__top-link"> <a href="">Доставка и оплата</a></li>
+              <li class="header__top-link"> <a href="">Контакты</a></li>
+              <li class="header__top-link-call"><img class="header__top-link-call-icon" src="images/icons/header-top/mob.svg" alt="Позвонить"><a class="header__top-link-call-number" href="tel:+78123098288">8 812 309-82-88</a></li>
+              <li class="header__top-link-socials"><a class="header__top-link-socials-inst" href=""><img src="images/icons/header-top/inst.svg" alt="Инстаграм"></a><a class="header__top-link-socials-fb" href=""><img src="images/icons/header-top/fb.svg" alt="Фейсбук"></a><a class="header__top-link-socials-vk" href=""><img src="images/icons/header-top/vk.svg" alt="Вконтакте"></a></li>
+            </ul>
+          </nav>
+          <div class="header__top-logo-mobile"> <img src="images/logo-mob.png" alt=""></div>
+          <div class="header__top-call"><img class="header__top-call-icon" src="images/icons/header-top/mob.svg" alt="Позвонить"><a class="header__top-call-number" href="tel:+78123098288">8 812 309-82-88</a></div>
+          <div class="header__top-cart"><img class="header__top-cart-icon" src="images/icons/header-top/cart.svg" alt="Корзина"><span class="header__top-cart-quantity">0</span><a class="header__top-cart-text" href="">В корзине <span>(0 товаров)</span></a></div>
+          <div class="header__top-socials"> <a class="header__top-socials-inst" href=""><img src="images/icons/header-top/inst.svg" alt="Инстаграм"></a><a class="header__top-socials-fb" href=""><img src="images/icons/header-top/fb.svg" alt="Фейсбук"></a><a class="header__top-socials-vk" href=""><img src="images/icons/header-top/vk.svg" alt="Вконтакте"></a></div>
+        </div>
+      </div>
+      <div class="header__bottom"> 
+        <div class="container"> 
+          <div class="header__bottom-wrapper js-burger-menu"> 
+            <div class="header__bottom-left"> 
+              <ul class="header__bottom-left-list">
+                <li class="header__bottom-left-link"><a href="product.html">Готовые наборы</a></li>
+                <li class="header__bottom-left-link"><a href="">Собрать свой набор</a></li>
+                <li class="header__bottom-left-link"><a href="">Акции</a><img src="images/icons/header-bottom/sale.svg" alt=""></li>
+              </ul>
+            </div>
+            <div class="header__bottom-logo"> <img src="images/logo.svg" alt="Логотип"></div>
+            <div class="header__bottom-right"> 
+              <ul class="header__bottom-right-list"> 
+                <li class="header__bottom-right-link"><a class="js-fancybox" href="#allgifts">Каталог десертов </a></li>
+                <li class="header__bottom-right-link"><a class="js-fancybox" href="#allgifts">Корпоративные подарки</a></li>
+                <li class="header__bottom-right-link"><a class="js-fancybox" href="#allgifts">Оптовикам</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <div class="container">
+      <div class="breadcrumbs">
+        <div class="breadcrumbs__list"> 
+          <div class="breadcrumbs__link"> <a href="">Главная</a></div>
+          <div class="breadcrumbs__link"> <a href="">Готовые наборы</a></div>
+          <div class="breadcrumbs__link"> <a href="">Сердце</a></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card__pictures"> 
+          <div class="product-card__pictures-main"><img class="js-main --active" src="images/product-card/main.jpg" alt="Коробка макаронс"><img class="js-main" src="images/product-card/main.jpg" alt="Коробка макаронс"><img class="js-main" src="images/product-card/main.jpg" alt="Коробка макаронс">
+          </div>
+          <div class="product-card__pictures-thumbs">
+            <div class="product-card__pictures-thumb js-thumb --active"><img src="images/product-card/main.jpg" alt="Коробка макаронс"></div>
+            <div class="product-card__pictures-thumb js-thumb"><img src="images/product-card/main.jpg" alt="Коробка макаронс"></div>
+            <div class="product-card__pictures-thumb js-thumb"><img src="images/product-card/main.jpg" alt="Коробка макаронс"></div>
+          </div>
+        </div>
+        <div class="product-card__order"> 
+          <div class="product-card__order-title title">Сердце</div>
+          <div class="product-card__order-text-container">
+            <div class="product-card__order-text">40 макаронс в круглой коробке с персональной надписью</div>
+          </div>
+          <div class="product-card__order-options"> 
+            <div class="product-card__order-tastes title --small js-accordion-switch">Вкусы:<img class="product-card__order-arrow" src="images/icons/accordion.svg" alt=""></div>
+            <div class="product-card__order-list js-accordion-list"> 
+              <div class="product-card__order-option"> 
+                <div class="product-card__order-flavor">Яблоко</div>
+                <div class="product-card__order-quantity">4 шт.</div>
+              </div>
+              <div class="product-card__order-option"> 
+                <div class="product-card__order-flavor">Вишня</div>
+                <div class="product-card__order-quantity">12 шт.</div>
+              </div>
+              <div class="product-card__order-option"> 
+                <div class="product-card__order-flavor">Кокос</div>
+                <div class="product-card__order-quantity">8 шт.</div>
+              </div>
+            </div>
+            <div class="product-card__order-mobile title --small js-accordion-switch">Состав и пищевая ценность<img class="product-card__order-mobile-arrow" src="images/icons/accordion.svg" alt=""></div>
+            <div class="product-card__order-mobile-list js-accordion-list">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, pariatur!</div>
+            <div class="product-card__order-mobile --noborder title --small js-accordion-switch">Условия и срок хранения<img class="product-card__order-mobile-arrow" src="images/icons/accordion.svg" alt=""></div>
+            <div class="product-card__order-mobile-list js-accordion-list">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non velit voluptatibus est odio?</div>
+          </div>
+          <div class="product-card__order-cart"> 
+            <div class="product-card__order-price-wrapper"> 
+              <div class="product-card__order-price">2800 руб</div>
+            </div><a class="product-card__order-add button --pink" href="">В корзину<img src="images/product-card/cart.png" alt=""></a>
+          </div>
+          <div class="product-card__order-details"> 
+            <div class="product-card__order-detail"> <img src="images/product-card/1.png" alt="">
+              <div class="product-card__order-info">Доставка от <u>400 руб.</u> в день заказа с 12 до 17 или с 17 до 21. <br><u>Бесплатно</u> при заказе на сумму от 2000 руб</div>
+            </div>
+            <div class="product-card__order-detail"> <img src="images/product-card/2.png" alt="">
+              <div class="product-card__order-info">Самовывоз <u>бесплатно.</u><br>Через 3 часа после оплаты заказа</div>
+            </div>
+            <div class="product-card__order-detail"> <img src="images/product-card/3.png" alt="">
+              <div class="product-card__order-info">Можем преподнести как анонимный подарок:)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs"> 
+        <div class="tabs__buttons js-triggers"> <a class="tabs__buttons-item js-trigger" href="#tab-1">Описание</a><a class="tabs__buttons-item js-trigger" href="#tab-2">Состав и пищевая ценность</a><a class="tabs__buttons-item js-trigger" href="#tab-3">Условия и срок хранения </a>
+        </div>
+        <div class="tabs__content"> 
+          <div class="tabs__content-item js-tab" id="tab-1">Текстовая информация и таблички. <br>Для примера рыба-текст<br><br>Банальные, но неопровержимые выводы, а также представители современных социальных резервов смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Сложно сказать, почему активно развивающиеся страны третьего мира неоднозначны и будут указаны как претенденты на роль ключевых факторов. Являясь всего лишь частью общей картины, диаграммы связей призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы.</div>
+          <div class="tabs__content-item js-tab" id="tab-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae placeat nam similique amet sit voluptates quas obcaecati provident ut. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae placeat nam similique amet sit voluptates quas obcaecati provident ut. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae placeat nam similique amet sit voluptates quas obcaecati provident ut. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae placeat nam similique amet sit voluptates quas obcaecati provident ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minima eius officia nam dolorum aut dolor repellendus, in ut omnis ipsam cupiditate fugit temporibus velit facere optio aliquam. Obcaecati, aut! temporibus velit facere optio aliquam. Obcaecati, aut! temporibus velit facere optio aliquam. </div>
+          <div class="tabs__content-item js-tab" id="tab-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minima eius officia nam dolorum aut dolor repellendus, in ut omnis ipsam cupiditate fugit temporibus velit facere optio aliquam. Obcaecati, aut! temporibus velit facere optio aliquam. Obcaecati, aut! temporibus velit facere optio aliquam. Obcaecati, aut!temporibus velit facere optio aliquam. Obcaecati, aut!temporibus velit facere optio aliquam. Obcaecati, aut!temporibus velit facere optio aliquam. Obcaecati, aut!temporibus velit facere optio aliquam. Obcaecati, aut!  Obcaecati, aut! temporibus velit facere optio aliquam. Obcaecati, aut! temporibus velit facere optio aliquam. Obcaecati, aut!temporibus velit facere optio aliquam. Obcaecati, aut!temporibus velit facere optio aliquam. Obcaecati, aut!temporibus velit facere optio aliquam. Obcaecati, aut!temporibus velit facere optio aliquam. Obcaecati, aut!</div>
+        </div>
+      </div>
+      <div class="youlike"> 
+        <div class="youlike__title title">Вам могут понравиться</div>
+        <div class="youlike__container swiper-container js-swiper-2">
+          <div class="youlike__wrapper swiper-wrapper">
+            <div class="youlike__column swiper-slide">
+              <div class="youlike__item"> 
+                <div class="youlike__image"> <img src="images/youlike/1.jpg" alt=""></div>
+                <div class="youlike__name title --small">1 макарон и 1 эклер</div>
+                <div class="youlike__text-wrapper"> 
+                  <div class="youlike__text">промо-набор</div>
+                </div>
+                <div class="youlike__order"> 
+                  <div class="youlike__prices"> 
+                    <div class="youlike__price-old">160 руб</div>
+                    <div class="youlike__price title --small">90 руб</div>
+                  </div>
+                  <div class="youlike__add">
+                    <div class="add-to-cart button">
+                      <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                      <div class="add-to-cart__text">В корзину</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="youlike__column swiper-slide">
+              <div class="youlike__item"> 
+                <div class="youlike__image"> <img src="images/youlike/2.jpg" alt=""></div>
+                <div class="youlike__name title --small">Всего понемногу </div>
+                <div class="youlike__text-wrapper"> 
+                  <div class="youlike__text">3 эклера, 4 трубочки, 6 макарун. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан</div>
+                </div>
+                <div class="youlike__order"> 
+                  <div class="youlike__prices"> 
+                    <div class="youlike__price-old"></div>
+                    <div class="youlike__price title --small">750 руб</div>
+                  </div>
+                  <div class="youlike__add">
+                    <div class="add-to-cart button">
+                      <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                      <div class="add-to-cart__text">В корзину</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="youlike__column swiper-slide">
+              <div class="youlike__item"> 
+                <div class="youlike__image"> <img src="images/youlike/3.jpg" alt=""></div>
+                <div class="youlike__name title --small">Ещё побольше</div>
+                <div class="youlike__text-wrapper"> 
+                  <div class="youlike__text">3 эклера, 4 трубочки, 6 макарун. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан</div>
+                </div>
+                <div class="youlike__order"> 
+                  <div class="youlike__prices"> 
+                    <div class="youlike__price-old"></div>
+                    <div class="youlike__price title --small">3900 руб</div>
+                  </div>
+                  <div class="youlike__add">
+                    <div class="add-to-cart button">
+                      <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                      <div class="add-to-cart__text">В корзину</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="youlike__column swiper-slide">
+              <div class="youlike__item"> 
+                <div class="youlike__image"> <img src="images/youlike/4.jpg" alt=""></div>
+                <div class="youlike__name title --small">Ещё побольше</div>
+                <div class="youlike__text-wrapper"> 
+                  <div class="youlike__text">3 эклера, 4 трубочки, 6 макарун. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан</div>
+                </div>
+                <div class="youlike__order"> 
+                  <div class="youlike__prices"> 
+                    <div class="youlike__price-old"></div>
+                    <div class="youlike__price title --small">3900 руб</div>
+                  </div>
+                  <div class="youlike__add">
+                    <div class="add-to-cart button">
+                      <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                      <div class="add-to-cart__text">В корзину</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="youlike__column swiper-slide">
+              <div class="youlike__item"> 
+                <div class="youlike__image"> <img src="images/youlike/1.jpg" alt=""></div>
+                <div class="youlike__name title --small">1 макарон и 1 эклер</div>
+                <div class="youlike__text-wrapper"> 
+                  <div class="youlike__text">промо-набор</div>
+                </div>
+                <div class="youlike__order"> 
+                  <div class="youlike__prices"> 
+                    <div class="youlike__price-old">160 руб</div>
+                    <div class="youlike__price title --small">90 руб</div>
+                  </div>
+                  <div class="youlike__add">
+                    <div class="add-to-cart button">
+                      <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                      <div class="add-to-cart__text">В корзину</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="youlike__column swiper-slide">
+              <div class="youlike__item"> 
+                <div class="youlike__image"> <img src="images/youlike/2.jpg" alt=""></div>
+                <div class="youlike__name title --small">Всего понемногу </div>
+                <div class="youlike__text-wrapper"> 
+                  <div class="youlike__text">3 эклера, 4 трубочки, 6 макарун. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан</div>
+                </div>
+                <div class="youlike__order"> 
+                  <div class="youlike__prices"> 
+                    <div class="youlike__price-old"></div>
+                    <div class="youlike__price title --small">750 руб</div>
+                  </div>
+                  <div class="youlike__add">
+                    <div class="add-to-cart button">
+                      <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                      <div class="add-to-cart__text">В корзину</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="youlike__column swiper-slide">
+              <div class="youlike__item"> 
+                <div class="youlike__image"> <img src="images/youlike/3.jpg" alt=""></div>
+                <div class="youlike__name title --small">Ещё побольше</div>
+                <div class="youlike__text-wrapper"> 
+                  <div class="youlike__text">3 эклера, 4 трубочки, 6 макарун. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан</div>
+                </div>
+                <div class="youlike__order"> 
+                  <div class="youlike__prices"> 
+                    <div class="youlike__price-old"></div>
+                    <div class="youlike__price title --small">3900 руб</div>
+                  </div>
+                  <div class="youlike__add">
+                    <div class="add-to-cart button">
+                      <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                      <div class="add-to-cart__text">В корзину</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="youlike__column swiper-slide">
+              <div class="youlike__item"> 
+                <div class="youlike__image"> <img src="images/youlike/4.jpg" alt=""></div>
+                <div class="youlike__name title --small">Ещё побольше</div>
+                <div class="youlike__text-wrapper"> 
+                  <div class="youlike__text">3 эклера, 4 трубочки, 6 макарун. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан</div>
+                </div>
+                <div class="youlike__order"> 
+                  <div class="youlike__prices"> 
+                    <div class="youlike__price-old"></div>
+                    <div class="youlike__price title --small">3900 руб</div>
+                  </div>
+                  <div class="youlike__add">
+                    <div class="add-to-cart button">
+                      <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                      <div class="add-to-cart__text">В корзину</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="youlike__prev swiper-button-prev"> <img src="images/youlike/prev.png" alt=""></div>
+          <div class="youlike__next swiper-button-next"><img src="images/youlike/next.png" alt=""></div>
+          <div class="youlike__pagination swiper-pagination"></div>
+        </div>
+        <div class="youlike__all-wrapper"><a class="youlike__all button --framed" href="">Все готовые наборы</a></div>
+      </div>
+    </div>
+    <footer class="footer"> 
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__features"> 
+            <div class="footer__features-top">
+              <div class="footer__features-item"> 
+                <div class="footer__features-image"><img src="images/icons/footer-features/1.svg" alt=""></div>
+                <div class="footer__features-text">Готовим вручную и с любовью</div>
+              </div>
+              <div class="footer__features-item"> 
+                <div class="footer__features-image"><img src="images/icons/footer-features/2.svg" alt=""></div>
+                <div class="footer__features-text">Доставим <br>в день заказа</div>
+              </div>
+              <div class="footer__features-item"> 
+                <div class="footer__features-image"><img src="images/icons/footer-features/3.svg" alt=""></div>
+                <div class="footer__features-text">100% <br>миндальная мука и натуральные ингредиенты</div>
+              </div>
+            </div>
+            <div class="footer__features-bottom"> 
+              <div class="footer__features-address">© 2021 Макароншоп ООО "Квантум", Санкт-Петербург,  улица Маршала Тухачевского, <span>дом</span>22</div>
+            </div>
+          </div>
+          <div class="footer__info"> 
+                <div class="footer__info-item">
+                  <div class="footer__info-title">Информация</div>
+                  <ul class="footer__info-list">
+                    <li class="footer__info-link"><a href="product.html">О компании</a></li>
+                    <li class="footer__info-link"><a href="product.html">Гарантии вкуса и <br>свежести</a></li>
+                    <li class="footer__info-link"><a href="product.html">Доставка и оплата</a></li>
+                    <li class="footer__info-link"><a href="product.html">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="footer__info-item">
+                  <div class="footer__info-title">Каталог</div>
+                  <ul class="footer__info-list">
+                    <li class="footer__info-link"><a href="product.html">Каталог десертов</a></li>
+                    <li class="footer__info-link"><a href="product.html">Готовые наборы</a></li>
+                    <li class="footer__info-link"><a href="product.html">Собрать свой набор</a></li>
+                    <li class="footer__info-link"><a href="product.html">Акции</a></li>
+                  </ul>
+                </div>
+                <div class="footer__info-item">
+                  <div class="footer__info-title">Для бизнеса</div>
+                  <ul class="footer__info-list">
+                    <li class="footer__info-link"><a href="product.html">Корпоративные подарки</a></li>
+                    <li class="footer__info-link"><a href="product.html">Для юридических лиц</a></li>
+                    <li class="footer__info-link"><a href="product.html">Оптовикам</a></li>
+                  </ul>
+                </div>
+          </div>
+          <div class="footer__contacts">
+            <div class="footer__contacts-top"> <a class="footer__contacts-number" href="TEL:+78123098288">+7 (812) 309 82 88</a>
+              <div class="footer__contacts-schedule">с 9:00 до 21:00</div>
+            </div>
+            <div class="footer__contacts-socials"> <a class="footer__contacts-social" href=""><img class="footer__contacts-social-normal" src="images/icons/footer-socials/inst.png" alt=""><img class="footer__contacts-social-hover" src="images/icons/footer-socials/inst-h.png" alt=""></a><a class="footer__contacts-social" href=""><img class="footer__contacts-social-normal" src="images/icons/footer-socials/fb.png" alt=""><img class="footer__contacts-social-hover" src="images/icons/footer-socials/fb-h.png" alt=""></a><a class="footer__contacts-social" href=""><img class="footer__contacts-social-normal" src="images/icons/footer-socials/vk.png" alt=""><img class="footer__contacts-social-hover" src="images/icons/footer-socials/vk-h.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Macaron Shop</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../css/style.css" media="all"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+    <script async="async" src="../js/bundle.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__top-burger js-burger-icon"> <span></span></div>
+          <nav class="header__top-menu js-burger-menu"> 
+            <ul class="header__top-list"> 
+              <li class="header__top-link"> <a href="">Свадебные предложения</a></li>
+              <li class="header__top-link"> <a href="">Наборы с печатью</a></li>
+              <li class="header__top-link"> <a href="">Гарантии вкуса и свежести</a></li>
+              <li class="header__top-link"> <a href="">Доставка и оплата</a></li>
+              <li class="header__top-link"> <a href="">Контакты</a></li>
+              <li class="header__top-link-call"><img class="header__top-link-call-icon" src="images/icons/header-top/mob.svg" alt="Позвонить"><a class="header__top-link-call-number" href="tel:+78123098288">8 812 309-82-88</a></li>
+              <li class="header__top-link-socials"><a class="header__top-link-socials-inst" href=""><img src="images/icons/header-top/inst.svg" alt="Инстаграм"></a><a class="header__top-link-socials-fb" href=""><img src="images/icons/header-top/fb.svg" alt="Фейсбук"></a><a class="header__top-link-socials-vk" href=""><img src="images/icons/header-top/vk.svg" alt="Вконтакте"></a></li>
+            </ul>
+          </nav>
+          <div class="header__top-logo-mobile"> <img src="images/logo-mob.png" alt=""></div>
+          <div class="header__top-call"><img class="header__top-call-icon" src="images/icons/header-top/mob.svg" alt="Позвонить"><a class="header__top-call-number" href="tel:+78123098288">8 812 309-82-88</a></div>
+          <div class="header__top-cart"><img class="header__top-cart-icon" src="images/icons/header-top/cart.svg" alt="Корзина"><span class="header__top-cart-quantity">0</span><a class="header__top-cart-text" href="">В корзине <span>(0 товаров)</span></a></div>
+          <div class="header__top-socials"> <a class="header__top-socials-inst" href=""><img src="images/icons/header-top/inst.svg" alt="Инстаграм"></a><a class="header__top-socials-fb" href=""><img src="images/icons/header-top/fb.svg" alt="Фейсбук"></a><a class="header__top-socials-vk" href=""><img src="images/icons/header-top/vk.svg" alt="Вконтакте"></a></div>
+        </div>
+      </div>
+      <div class="header__bottom"> 
+        <div class="container"> 
+          <div class="header__bottom-wrapper js-burger-menu"> 
+            <div class="header__bottom-left"> 
+              <ul class="header__bottom-left-list">
+                <li class="header__bottom-left-link"><a href="product.html">Готовые наборы</a></li>
+                <li class="header__bottom-left-link"><a href="">Собрать свой набор</a></li>
+                <li class="header__bottom-left-link"><a href="">Акции</a><img src="images/icons/header-bottom/sale.svg" alt=""></li>
+              </ul>
+            </div>
+            <div class="header__bottom-logo"> <img src="images/logo.svg" alt="Логотип"></div>
+            <div class="header__bottom-right"> 
+              <ul class="header__bottom-right-list"> 
+                <li class="header__bottom-right-link"><a class="js-fancybox" href="#allgifts">Каталог десертов </a></li>
+                <li class="header__bottom-right-link"><a class="js-fancybox" href="#allgifts">Корпоративные подарки</a></li>
+                <li class="header__bottom-right-link"><a class="js-fancybox" href="#allgifts">Оптовикам</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <div class="allgifts" id="allgifts">
+      <div class="allgifts__wrapper">
+        <div class="allgifts__title title">Скачать весь каталог подарков</div>
+        <form class="allgifts__form" action="#" id="js-form">
+          <div class="allgifts__sections">
+            <div class="allgifts__section">
+              <label class="allgifts__label" for="name">Ваше имя*</label>
+              <input class="allgifts__input" type="text" id="name" name="name" placeholder="Укажите имя">
+            </div>
+            <div class="allgifts__section">
+              <label class="allgifts__label" for="tel">Ваш телефон*</label>
+              <input class="allgifts__input" type="TEL" id="tel" name="tel" placeholder="+7 (___) ___-__-__">
+            </div>
+            <div class="allgifts__section">
+              <label class="allgifts__label" for="company">Название компании</label>
+              <input class="allgifts__input" type="text" id="company">
+            </div>
+            <div class="allgifts__section">
+              <label class="allgifts__label" for="email">E-mail</label>
+              <input class="allgifts__input" type="email" id="email">
+            </div>
+          </div>
+          <div class="allgifts__button-wrapper">
+            <button class="allgifts__button button --pink" type="submit">Отправить заявку</button>
+          </div>
+          <div class="allgifts__info-wrapper">
+            <div class="allgifts__info">Нажимая на кнопку "Оформить заказ" Я принимаю и соглашаюсь с <a href=""> Договором оферты </a>и разрешаю обработку моих персональных данных в соответствии с <a href=""> Политикой конфиденциальности</a></div>
+          </div>
+        </form>
+      </div><a class="allgifts__close" href="" onclick="$.fancybox.close(); return false;"><img src="images/allgifts/close.png" alt=""></a><a class="allgifts__close-tablet" href="" onclick="$.fancybox.close(); return false;"><img src="images/allgifts/close-tablet.png" alt=""></a>
+    </div>
+    <div class="intro"> 
+      <div class="container">
+        <div class="intro__wrapper">
+          <div class="intro__images" data-speed="10">
+            <div class="intro__images-main"><img src="images/intro/main.png" alt="Коробка с макаронс"></div>
+            <div class="intro__images-macarons js-img"><img src="images/intro/macarons.png" alt="Макаронс"></div>
+            <div class="intro__images-almonds js-img"><img src="images/intro/almonds.png" alt="Миндаль"></div>
+            <div class="intro__images-mint js-img"><img src="images/intro/mint.png" alt="Мята"></div>
+          </div>
+          <div class="intro__info">
+            <div class="intro__info-since"><img src="images/intro/since.png" alt="С 2013 года"></div>
+            <div class="intro__info-title">Настоящая любовь</div>
+            <div class="intro__info-text">Пирожные макарон и другие десерты <br> из натуральных ингредиентов, приготовленные с любовью</div>
+            <div class="intro__image-mob"><img src="images/intro/main-mob.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="packages">
+        <div class="packages__wrapper">
+          <div class="packages__backround"> <img src="images/packages/bg_1.png" alt="Фон">
+            <div class="packages__column"> 
+              <div class="packages__item"> 
+                <div class="packages__image"> <img src="images/packages/1.png" alt="Товар"></div><a class="packages__more-info" href="">
+                  <div class="packages__title title --medium">Готовые наборы</div>
+                  <div class="packages__arrow"> <img src="images/icons/packages/arrow.svg" alt="Перейти"></div></a>
+                <div class="packages__text">Готовые наборы со скидкой. <br> Вы можете подобрать набор на подходящий случай.</div>
+              </div>
+            </div>
+          </div>
+          <div class="packages__backround"> <img src="images/packages/bg_2.png" alt="Фон">
+            <div class="packages__column"> 
+              <div class="packages__item"> 
+                <div class="packages__image"> <img src="images/packages/2.png" alt="Товар"></div><a class="packages__more-info" href="">
+                  <div class="packages__title title --medium">Собрать свой набор</div>
+                  <div class="packages__arrow"> <img src="images/icons/packages/arrow.svg" alt="Перейти"></div></a>
+                <div class="packages__text">Выбрать количество макарун, и выбрать вкусы</div>
+              </div>
+            </div>
+          </div>
+          <div class="packages__backround"> <img src="images/packages/bg_3.png" alt="Фон">
+            <div class="packages__column"> 
+              <div class="packages__item"> 
+                <div class="packages__image"> <img src="images/packages/3.png" alt="Товар"></div><a class="packages__more-info" href="">
+                  <div class="packages__title title --medium">Набор с индивидуальной печатью</div>
+                  <div class="packages__arrow"> <img src="images/icons/packages/arrow.svg" alt="Перейти"></div></a>
+                <div class="packages__text">Собрать набор макарон с уникальным дизайном. </div>
+              </div>
+            </div>
+          </div>
+          <div class="packages__backround"> <img src="images/packages/bg_4.png" alt="Фон">
+            <div class="packages__column"> 
+              <div class="packages__item"> 
+                <div class="packages__image"> <img src="images/packages/4.png" alt="Товар"></div><a class="packages__more-info" href="">
+                  <div class="packages__title title --medium">Свадебные предложения</div>
+                  <div class="packages__arrow"> <img src="images/icons/packages/arrow.svg" alt="Перейти"></div></a>
+                <div class="packages__text">Нежные пирожные макаронс с разными вкусами для <br>украшения вашего свадебного торжества</div>
+              </div>
+            </div>
+          </div>
+          <div class="packages__backround"> <img src="images/packages/bg_5.png" alt="Фон">
+            <div class="packages__column"> 
+              <div class="packages__item"> 
+                <div class="packages__image"> <img src="images/packages/5.png" alt="Товар"></div><a class="packages__more-info" href="">
+                  <div class="packages__title title --medium">Корпоративные подарки</div>
+                  <div class="packages__arrow"> <img src="images/icons/packages/arrow.svg" alt="Перейти"></div></a>
+                <div class="packages__text">От 85 руб за шт. С уникальным дизайном. <br> Приятный комплимент для коллег и партнеров</div>
+              </div>
+            </div>
+          </div>
+          <div class="packages__backround"> <img src="images/packages/bg_6.png" alt="Фон">
+            <div class="packages__column"> 
+              <div class="packages__item"> 
+                <div class="packages__image"> <img src="images/packages/6.png" alt="Товар"></div><a class="packages__more-info" href="">
+                  <div class="packages__title title --medium">Оптовые поставки</div>
+                  <div class="packages__arrow"> <img src="images/icons/packages/arrow.svg" alt="Перейти"></div></a>
+                <div class="packages__text">Предложение для кофеен, кафе, отелей и т.д. <br>Посмотрите условия сотрудничества и отзывы.</div>
+              </div>
+            </div>
+          </div>
+          <div class="packages__mobile"> 
+            <div class="packages__mobile-list"> <a class="packages__mobile-link" href="">
+                <div class="packages__mobile-link-text">Готовые наборы</div>
+                <div class="packages__mobile-arrow"> <img src="images/icons/packages/arrow-mob.svg" alt="Перейти"></div></a><a class="packages__mobile-link" href="">
+                <div class="packages__mobile-link-text">Собрать свой набор</div>
+                <div class="packages__mobile-arrow"> <img src="images/icons/packages/arrow-mob.svg" alt="Перейти"></div></a><a class="packages__mobile-link" href="">
+                <div class="packages__mobile-link-text">Набор с индивидуальной печатью</div>
+                <div class="packages__mobile-arrow"> <img src="images/icons/packages/arrow-mob.svg" alt="Перейти"></div></a><a class="packages__mobile-link" href="">
+                <div class="packages__mobile-link-text">Свадебные предложения</div>
+                <div class="packages__mobile-arrow"> <img src="images/icons/packages/arrow-mob.svg" alt="Перейти"></div></a><a class="packages__mobile-link" href="">
+                <div class="packages__mobile-link-text">Корпоративные подарки</div>
+                <div class="packages__mobile-arrow"> <img src="images/icons/packages/arrow-mob.svg" alt="Перейти"></div></a><a class="packages__mobile-link" href="">
+                <div class="packages__mobile-link-text">Для юридических лиц</div>
+                <div class="packages__mobile-arrow"> <img src="images/icons/packages/arrow-mob.svg" alt="Перейти"></div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="specials"> 
+        <div class="specials__title title">Акции</div>
+        <div class="specials__container swiper-container js-swiper">
+          <div class="specials__wrapper swiper-wrapper">
+            <div class="specials__slide swiper-slide">
+              <div class="specials__image"> <img src="images/specials/1.png" alt="Специальное предложение"></div>
+              <div class="specials__info"> 
+                <div class="specials__label">НОВИНКА</div>
+                <div class="specials__title title --small">Супербольшие наборы <br>от 1000 Рублей</div>
+              </div>
+            </div>
+            <div class="specials__slide swiper-slide">
+              <div class="specials__image"> <img src="images/specials/2.png" alt="Специальное предложение"></div>
+              <div class="specials__info"> 
+                <div class="specials__label">АКЦИЯ</div>
+                <div class="specials__title title --small">Эклер + 1 макарон <br>= 99 рублей</div>
+              </div>
+            </div>
+            <div class="specials__slide swiper-slide">
+              <div class="specials__image"> <img src="images/specials/3.png" alt="Специальное предложение"></div>
+              <div class="specials__info"> 
+                <div class="specials__label">АКЦИЯ</div>
+                <div class="specials__title title --small">СУПЕРМАКАРУХИ <br>ПО СУПЕРЦЕНАМ</div>
+              </div>
+            </div>
+            <div class="specials__slide swiper-slide">
+              <div class="specials__image"> <img src="images/specials/4.png" alt="Специальное предложение"></div>
+              <div class="specials__info"> 
+                <div class="specials__label">НОВИНКА</div>
+                <div class="specials__title title --small">Великолепные трубочки. Самые вкусные на свете</div>
+              </div>
+            </div>
+            <div class="specials__slide swiper-slide">
+              <div class="specials__image"> <img src="images/specials/1.png" alt="Специальное предложение"></div>
+              <div class="specials__info"> 
+                <div class="specials__label">НОВИНКА</div>
+                <div class="specials__title title --small">Супербольшие наборы <br>от 1000 Рублей</div>
+              </div>
+            </div>
+            <div class="specials__slide swiper-slide">
+              <div class="specials__image"> <img src="images/specials/2.png" alt="Специальное предложение"></div>
+              <div class="specials__info"> 
+                <div class="specials__label">АКЦИЯ</div>
+                <div class="specials__title title --small">Эклер + 1 макарон <br>= 99 рублей</div>
+              </div>
+            </div>
+          </div>
+          <div class="specials__pagination swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="holidays"> 
+        <div class="holidays__title title">Ближайшие праздники </div>
+        <div class="holidays__row"> 
+          <div class="holidays__column"> 
+            <div class="holidays__image"> <img src="images/holidays/1.png" alt=""></div>
+            <div class="holidays__text">Скоро<br>День рождения близкого человека  </div>
+          </div>
+          <div class="holidays__column"> 
+            <div class="holidays__image"> <img src="images/holidays/2.png" alt=""></div>
+            <div class="holidays__text">1 января<br>Новый Год<br>2021 </div>
+          </div>
+          <div class="holidays__column"> 
+            <div class="holidays__image"> <img src="images/holidays/3.png" alt=""></div>
+            <div class="holidays__text">14 февраля<br>День Святого<br>Валентина </div>
+          </div>
+          <div class="holidays__column"> 
+            <div class="holidays__image"> <img src="images/holidays/4.png" alt=""></div>
+            <div class="holidays__text">23 февраля<br>День Защитника<br>Отечества </div>
+          </div>
+          <div class="holidays__column"> 
+            <div class="holidays__image"> <img src="images/holidays/5.png" alt=""></div>
+            <div class="holidays__text">8 марта<br>Международный<br>Женский День </div>
+          </div>
+          <div class="holidays__column"> 
+            <div class="holidays__image"> <img src="images/holidays/6.png" alt=""></div>
+            <div class="holidays__text">9 марта<br>День Сурка </div>
+          </div>
+          <div class="holidays__cup"> <img src="images/holidays/cup.png" alt=""></div>
+        </div>
+      </div>
+      <div class="popular">
+        <div class="popular__title title">Популярные наборы</div>
+        <div class="popular__row"> 
+          <div class="popular__column"> 
+            <div class="popular__item"> 
+              <div class="popular__image"> <img src="images/popular/1.jpg" alt=""></div>
+              <div class="popular__info">
+                <div class="popular__name title --small">Сердце</div>
+                <div class="popular__text-height"> 
+                  <div class="popular__text">24 штуки в коробке в виде сердцa. <br>Ассорти из 6 вкусов </div>
+                </div>
+              </div>
+              <div class="popular__order">
+                <div class="popular__price-width"> 
+                  <div class="popular__price title --small">2800 руб</div>
+                </div>
+                <div class="popular__add">
+                  <div class="add-to-cart button">
+                    <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                    <div class="add-to-cart__text">В корзину</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__column"> 
+            <div class="popular__item"> 
+              <div class="popular__image"> <img src="images/popular/2.jpg" alt=""></div>
+              <div class="popular__info">
+                <div class="popular__name title --small">Красота спасёт мир </div>
+                <div class="popular__text-height"> 
+                  <div class="popular__text">Набор 16 шт. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан </div>
+                </div>
+              </div>
+              <div class="popular__order">
+                <div class="popular__price-width"> 
+                  <div class="popular__price title --small">750 руб</div>
+                </div>
+                <div class="popular__add">
+                  <div class="add-to-cart button">
+                    <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                    <div class="add-to-cart__text">В корзину</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__column"> 
+            <div class="popular__item"> 
+              <div class="popular__image"> <img src="images/popular/3.jpg" alt=""></div>
+              <div class="popular__info">
+                <div class="popular__name title --small">Круглый набор</div>
+                <div class="popular__text-height"> 
+                  <div class="popular__text">40 макаронс в круглой коробке с персональной надписью </div>
+                </div>
+              </div>
+              <div class="popular__order">
+                <div class="popular__price-width"> 
+                  <div class="popular__price title --small">3900 руб</div>
+                </div>
+                <div class="popular__add">
+                  <div class="add-to-cart button">
+                    <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                    <div class="add-to-cart__text">В корзину</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__column"> 
+            <div class="popular__item"> 
+              <div class="popular__image"> <img src="images/popular/4.jpg" alt=""></div>
+              <div class="popular__info">
+                <div class="popular__name title --small">Набор на 9</div>
+                <div class="popular__text-height"> 
+                  <div class="popular__text">Набор из 9 штук в квадратной коробке. Вкусы: шоколад, фисташка, вишня </div>
+                </div>
+              </div>
+              <div class="popular__order">
+                <div class="popular__price-width"> 
+                  <div class="popular__price title --small">950 руб</div>
+                </div>
+                <div class="popular__add">
+                  <div class="add-to-cart button">
+                    <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                    <div class="add-to-cart__text">В корзину</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__column"> 
+            <div class="popular__item"> 
+              <div class="popular__image"> <img src="images/popular/5.jpg" alt=""></div>
+              <div class="popular__info">
+                <div class="popular__name title --small">Набор на 16</div>
+                <div class="popular__text-height"> 
+                  <div class="popular__text">Набор 16 шт. Вкусы: соленая карамель, голубой сыр, пармезан, шоколад  </div>
+                </div>
+              </div>
+              <div class="popular__order">
+                <div class="popular__price-width"> 
+                  <div class="popular__price title --small">1500 руб</div>
+                </div>
+                <div class="popular__add">
+                  <div class="add-to-cart button">
+                    <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                    <div class="add-to-cart__text">В корзину</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__column"> 
+            <div class="popular__item"> 
+              <div class="popular__image"> <img src="images/popular/3.jpg" alt=""></div>
+              <div class="popular__info">
+                <div class="popular__name title --small">Сердце </div>
+                <div class="popular__text-height"> 
+                  <div class="popular__text">24 штуки в коробке в виде сердца. <br>Ассорти из 6 вкусов  </div>
+                </div>
+              </div>
+              <div class="popular__order">
+                <div class="popular__price-width"> 
+                  <div class="popular__price title --small">2500 руб</div>
+                </div>
+                <div class="popular__add">
+                  <div class="add-to-cart button">
+                    <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                    <div class="add-to-cart__text">В корзину</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__column"> 
+            <div class="popular__item"> 
+              <div class="popular__image"> <img src="images/popular/1.jpg" alt=""></div>
+              <div class="popular__info">
+                <div class="popular__name title --small">Сердце</div>
+                <div class="popular__text-height"> 
+                  <div class="popular__text">24 штуки в коробке в виде сердцa. <br>Ассорти из 6 вкусов </div>
+                </div>
+              </div>
+              <div class="popular__order">
+                <div class="popular__price-width"> 
+                  <div class="popular__price title --small">2800 руб</div>
+                </div>
+                <div class="popular__add">
+                  <div class="add-to-cart button">
+                    <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                    <div class="add-to-cart__text">В корзину</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__column"> 
+            <div class="popular__item"> 
+              <div class="popular__image"> <img src="images/popular/2.jpg" alt=""></div>
+              <div class="popular__info">
+                <div class="popular__name title --small">Красота спасёт мир </div>
+                <div class="popular__text-height"> 
+                  <div class="popular__text">Набор 16 шт. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан </div>
+                </div>
+              </div>
+              <div class="popular__order">
+                <div class="popular__price-width"> 
+                  <div class="popular__price title --small">750 руб</div>
+                </div>
+                <div class="popular__add">
+                  <div class="add-to-cart button">
+                    <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                    <div class="add-to-cart__text">В корзину</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__column"> 
+            <div class="popular__item"> 
+              <div class="popular__image"> <img src="images/popular/3.jpg" alt=""></div>
+              <div class="popular__info">
+                <div class="popular__name title --small">Круглый набор</div>
+                <div class="popular__text-height"> 
+                  <div class="popular__text">40 макаронс в круглой коробке с персональной надписью </div>
+                </div>
+              </div>
+              <div class="popular__order">
+                <div class="popular__price-width"> 
+                  <div class="popular__price title --small">3900 руб</div>
+                </div>
+                <div class="popular__add">
+                  <div class="add-to-cart button">
+                    <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                    <div class="add-to-cart__text">В корзину</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__column"> 
+            <div class="popular__item"> 
+              <div class="popular__image"> <img src="images/popular/4.jpg" alt=""></div>
+              <div class="popular__info">
+                <div class="popular__name title --small">Набор на 9</div>
+                <div class="popular__text-height"> 
+                  <div class="popular__text">Набор из 9 штук в квадратной коробке. Вкусы: шоколад, фисташка, вишня </div>
+                </div>
+              </div>
+              <div class="popular__order">
+                <div class="popular__price-width"> 
+                  <div class="popular__price title --small">950 руб</div>
+                </div>
+                <div class="popular__add">
+                  <div class="add-to-cart button">
+                    <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                    <div class="add-to-cart__text">В корзину</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__column"> 
+            <div class="popular__item"> 
+              <div class="popular__image"> <img src="images/popular/5.jpg" alt=""></div>
+              <div class="popular__info">
+                <div class="popular__name title --small">Набор на 16</div>
+                <div class="popular__text-height"> 
+                  <div class="popular__text">Набор 16 шт. Вкусы: соленая карамель, голубой сыр, пармезан, шоколад  </div>
+                </div>
+              </div>
+              <div class="popular__order">
+                <div class="popular__price-width"> 
+                  <div class="popular__price title --small">1500 руб</div>
+                </div>
+                <div class="popular__add">
+                  <div class="add-to-cart button">
+                    <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                    <div class="add-to-cart__text">В корзину</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__column"> 
+            <div class="popular__item"> 
+              <div class="popular__image"> <img src="images/popular/3.jpg" alt=""></div>
+              <div class="popular__info">
+                <div class="popular__name title --small">Сердце </div>
+                <div class="popular__text-height"> 
+                  <div class="popular__text">24 штуки в коробке в виде сердца. <br>Ассорти из 6 вкусов  </div>
+                </div>
+              </div>
+              <div class="popular__order">
+                <div class="popular__price-width"> 
+                  <div class="popular__price title --small">2500 руб</div>
+                </div>
+                <div class="popular__add">
+                  <div class="add-to-cart button">
+                    <div class="add-to-cart__image"><img src="images/icons/cart.png" alt="В корзину"></div>
+                    <div class="add-to-cart__text">В корзину</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular__button-flex"><a class="popular__button button --framed js-button" href="">Все праздничные наборы</a><a class="popular__button button --framed --hidden js-button" href="">Скрыть</a></div>
+      </div>
+      <div class="instagram"> 
+        <div class="instagram__title title">Всё самое вкусное в нашем Instagram</div>
+        <div class="instagram__head"> <a class="instagram__profile" href=""> <img src="images/instagram/profile.png" alt=""></a>
+          <div class="instagram__info"><a class="instagram__name" href="">@macaronshopru</a>
+            <div class="instagram__posts"> <span>1 589 </span>публикаций</div>
+            <div class="instagram__followers"> <span>10,9 тыс. </span>подписчиков</div>
+            <div class="instagram__following"> <span>435 </span>подписок</div>
+          </div>
+        </div>
+        <div class="instagram__body"> 
+          <div class="instagram__pic"> <img src="images/instagram/1.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/2.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/3.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/4.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/1.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/2.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/5.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/6.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/2.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/3.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/5.jpg" alt=""></div>
+          <div class="instagram__pic"> <img src="images/instagram/6.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="wecare"> 
+        <div class="wecare__title title">Мы обо всём позаботились</div>
+        <div class="wecare__row"> 
+          <div class="wecare__column"> 
+            <div class="wecare__item"> 
+              <div class="wecare__image"> <img src="images/wecare/1.jpg" alt=""></div>
+              <div class="wecare__subtitle title --small">Лучшие ингредeнты</div>
+              <div class="wecare__text">Что-то про суперкачество, лучших поваров, свежесть и т.д.</div>
+            </div>
+          </div>
+          <div class="wecare__column"> 
+            <div class="wecare__item"> 
+              <div class="wecare__image"> <img src="images/wecare/2.jpg" alt=""></div>
+              <div class="wecare__subtitle title --small">Упаковка</div>
+              <div class="wecare__text">Что-то про суперкоробочки и бантики и бла бла бла</div>
+            </div>
+          </div>
+          <div class="wecare__column"> 
+            <div class="wecare__item"> 
+              <div class="wecare__image"> <img src="images/wecare/3.jpg" alt=""></div>
+              <div class="wecare__subtitle title --small">Получение в день заказа</div>
+              <div class="wecare__text">В день заказа доставка курьером или самовывоз</div>
+            </div>
+          </div>
+          <div class="wecare__column"> 
+            <div class="wecare__item"> 
+              <div class="wecare__image"> <img src="images/wecare/4.jpg" alt=""></div>
+              <div class="wecare__subtitle title --small">Анонимная доставка</div>
+              <div class="wecare__text">Можем преподнести Ваш заказ как анонимный подарок</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"> 
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__features"> 
+            <div class="footer__features-top">
+              <div class="footer__features-item"> 
+                <div class="footer__features-image"><img src="images/icons/footer-features/1.svg" alt=""></div>
+                <div class="footer__features-text">Готовим вручную и с любовью</div>
+              </div>
+              <div class="footer__features-item"> 
+                <div class="footer__features-image"><img src="images/icons/footer-features/2.svg" alt=""></div>
+                <div class="footer__features-text">Доставим <br>в день заказа</div>
+              </div>
+              <div class="footer__features-item"> 
+                <div class="footer__features-image"><img src="images/icons/footer-features/3.svg" alt=""></div>
+                <div class="footer__features-text">100% <br>миндальная мука и натуральные ингредиенты</div>
+              </div>
+            </div>
+            <div class="footer__features-bottom"> 
+              <div class="footer__features-address">© 2021 Макароншоп ООО "Квантум", Санкт-Петербург,  улица Маршала Тухачевского, <span>дом</span>22</div>
+            </div>
+          </div>
+          <div class="footer__info"> 
+                <div class="footer__info-item">
+                  <div class="footer__info-title">Информация</div>
+                  <ul class="footer__info-list">
+                    <li class="footer__info-link"><a href="product.html">О компании</a></li>
+                    <li class="footer__info-link"><a href="product.html">Гарантии вкуса и <br>свежести</a></li>
+                    <li class="footer__info-link"><a href="product.html">Доставка и оплата</a></li>
+                    <li class="footer__info-link"><a href="product.html">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="footer__info-item">
+                  <div class="footer__info-title">Каталог</div>
+                  <ul class="footer__info-list">
+                    <li class="footer__info-link"><a href="product.html">Каталог десертов</a></li>
+                    <li class="footer__info-link"><a href="product.html">Готовые наборы</a></li>
+                    <li class="footer__info-link"><a href="product.html">Собрать свой набор</a></li>
+                    <li class="footer__info-link"><a href="product.html">Акции</a></li>
+                  </ul>
+                </div>
+                <div class="footer__info-item">
+                  <div class="footer__info-title">Для бизнеса</div>
+                  <ul class="footer__info-list">
+                    <li class="footer__info-link"><a href="product.html">Корпоративные подарки</a></li>
+                    <li class="footer__info-link"><a href="product.html">Для юридических лиц</a></li>
+                    <li class="footer__info-link"><a href="product.html">Оптовикам</a></li>
+                  </ul>
+                </div>
+          </div>
+          <div class="footer__contacts">
+            <div class="footer__contacts-top"> <a class="footer__contacts-number" href="TEL:+78123098288">+7 (812) 309 82 88</a>
+              <div class="footer__contacts-schedule">с 9:00 до 21:00</div>
+            </div>
+            <div class="footer__contacts-socials"> <a class="footer__contacts-social" href=""><img class="footer__contacts-social-normal" src="images/icons/footer-socials/inst.png" alt=""><img class="footer__contacts-social-hover" src="images/icons/footer-socials/inst-h.png" alt=""></a><a class="footer__contacts-social" href=""><img class="footer__contacts-social-normal" src="images/icons/footer-socials/fb.png" alt=""><img class="footer__contacts-social-hover" src="images/icons/footer-socials/fb-h.png" alt=""></a><a class="footer__contacts-social" href=""><img class="footer__contacts-social-normal" src="images/icons/footer-socials/vk.png" alt=""><img class="footer__contacts-social-hover" src="images/icons/footer-socials/vk-h.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
